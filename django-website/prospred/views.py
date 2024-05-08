@@ -10,3 +10,9 @@ def home(request):
 
 def about(request):
     return render (request, 'about.html')
+
+def register(request):
+    if request.method == "POST":
+    # perform registration logic here
+        pass
+    return render (request, 'register.html')
