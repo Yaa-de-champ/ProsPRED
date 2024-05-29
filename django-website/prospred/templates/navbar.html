@@ -1,9 +1,9 @@
 {% load static %}
-
+<!-- 
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'weblogo.jpeg' %}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">ProsPRED</a>
+            <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'weblogo.jpeg' %}" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">ProsPRED</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -13,11 +13,37 @@
                 <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">About Website</a>
-                </li>
+                <a class="nav-link active" href="{% url 'about' %}">About Website</a>
+                </li>  -->
             <!-- Add a link to the documentation here -->
+            <!-- </ul>
+        </div>
+        </div>
+    </nav>
+</nav> -->
+
+<!-- <nav class="navbar bg-body-tertiary fixed-top"> -->
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'weblogo.jpeg' %}" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">ProsPRED</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ProsPRED</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link active" href="{% url 'about' %}">About Website</a>
+            </li>
             </ul>
         </div>
         </div>
     </nav>
-</nav>
+</nav>    
