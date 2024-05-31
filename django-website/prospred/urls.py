@@ -7,5 +7,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
     # Add URL for new user registration here.
-    path('register/', views.register, name='register')
+    path('register/', views.register, name='register'),
+    path('', views.upload_view, name='upload'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
