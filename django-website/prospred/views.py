@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
-import numpy as np
-from .forms import ImageUploadForm
+# import numpy as np
+# from .forms import ImageUploadForm
 # from .models import load_model
 # Create your views here.
 # def home(request):
